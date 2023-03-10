@@ -1,0 +1,43 @@
+Javascript is a combination of synchronous and asynchronous events.
+
+Synchronous events-events execute one after another.
+
+Asynchronous events-like callback and promises.
+
+JavaScript is primarily single threaded from the application execution point of view.
+
+In single threaded application, an event queue is maintained. An event queue is a queue of events to be executed.
+
+A queue is a FIFO structure. Hence the events will be executed in order they arrive in the queue.
+
+In single thread execution, when an event is being served, it may happen that there are multiple function calls related to that particular event.
+
+Suppose an event E1 has function f1(). Now f1() calls f2() and waits for it; then f2() calls f3() and waits for it.
+
+Javascript manages this with the help of a call stack. A stack of function calls is maintained.
+
+CallStack[f3,
+          f2,
+          f1
+] is the order of the stack.
+
+#Pseudocode:
+while(isNotEmpty(eventQueue))
+   pull out first item from event queue
+   follow the execution logic until the call stack is empty
+
+
+This is the situation with respect to synchronous execution.
+
+Demonstration of asynchronous execution:
+
+#Pseudocode:
+let order1=takeOrder(table1);
+chef.handOver(order,dish=>serveTable(dish));
+let order2=takeOrder(table2);
+
+Here the waiter takes order from table1 and hands it over to the chef.
+The chef takes time to prepare. But the waiter does not keep waiting. Here a callback is generated. The waiter moves on to table2 to take order. When the order for table1 is ready, then the waiter is called by the chef to deliver the product to table1. Asynchronous execution takes place with the help of callback. 
+
+The callback goes to the back of the event queue.
+

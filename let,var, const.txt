@@ -1,0 +1,18 @@
+The main difference between let and var is that scope of a variable defined with let is limited to the block in which it is declared while variable declared with var has the global scope. So we can say that var is rather a keyword which defines a variable globally regardless of block scope.
+
+The scope of let not only limited to the block in which it is defined but variable with let also do not get added with global window object even if it get declared outside of any block. But we can access variable with var from window object if it is defined globally.
+
+Due to limited scope let variables are usually used when there is limited use of those variables such as in for loops, while loops or inside the scope of if conditions etc while var variable is used when value of variable need to be less change and used to accessed globally.
+
+Also, one difference between var and let is variable with var can be redeclared to some other value while variable could not be redeclared if it is defined with let.
+
+
+Difference among let,var and const:
+
+var declarations are globally scoped or function scoped while let and const are block scoped.
+
+var variables can be updated and re-declared within its scope; let variables can be updated but not re-declared; const variables can neither be updated nor re-declared.
+
+They are all hoisted to the top of their scope. But while var variables are initialized with undefined, let and const variables are not initialized.
+
+While var and let can be declared without being initialized, const must be initialized during declaration.

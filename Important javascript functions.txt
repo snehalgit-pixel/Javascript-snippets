@@ -1,0 +1,16 @@
+call()
+The utility of call() is that it takes an object as an argument and binds the object to the this reference.
+It has two applications:
+(i) To call the function and execute it.
+(ii) To bind the object passed on as an argument to the this reference.
+
+__proto()__
+In javaScript, a function object has a prototype object.
+Every function object has a prototype property that points to the prototype object.
+If we have a function named greet(), then simply typing greet.prorotype() in the console will display the prototype object in the greet() function.
+
+prototype property in Javascript allows us to add new properties and methods to the object constructors.
+
+practice24.js depicts exactly how this is useful and how this allows us to add new methods to the object constructors.
+
+Every object has a prototype. The prototype of an object has __proto__. __proto__ points to null.

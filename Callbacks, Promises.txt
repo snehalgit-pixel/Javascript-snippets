@@ -1,0 +1,33 @@
+1) What is the full form of AJAX?
+   Asynchronous Javascript and XML
+
+2) How are asynchronous calls handled in JavaScript ?
+   Consider the following snippet: 
+   
+--------------------------------------------------------------------
+
+  console.log("Start");
+
+  setTimeout(()=>{
+      console.log("We are in the timeout zone");
+  }, 5000);
+
+  console.log("End");
+
+--------------------------------------------------------------------
+
+All the method calls are stacked in the callstack. JavaScript is single threaded from the application point of view. Whenever the method setTimeout() is called, it is popped out of the callstack and pushed into the Web API(in the web browser). The Web API maintains the time count and when the time delay count is over, it is again pushed into the callstack and executed. As long as the setTimeout() stays in the Web API, the other methods in the callstack get executed in LIFO order.
+
+Note: forEach is used to handle callbacks. 
+
+3) What is a callback ?
+   A callback function is a function that is passed in as a parameter, that is going to run at a later period of time. This technique allows a function to call another function. A callback function can run after another function has finished.
+
+4) When are callbacks used?
+   Callbacks are used in asynchronous functions. They are useful in situations where one function has to wait for another function, such as waiting for a file to load.
+
+5) What is callback stacking?
+   When there are multiple callbacks and there is callback within a callback, then a stack of callbacks is created. This is referred to as callback stacking. This situation is made easier with the help of promises.
+
+6) What is a promise?
+   A promise is an object that either returns the result of an asynchronous operation or a failure of the same.    

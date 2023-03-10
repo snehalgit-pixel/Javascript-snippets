@@ -1,0 +1,5 @@
+Topics:
+
+1. Template literals
+2. Destructuring objects
+3. Destructuring arrays 

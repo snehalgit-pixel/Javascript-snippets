@@ -1,0 +1,8 @@
+const does not allow the data type to be overridden. 
+
+const example={} is an empty object. We can assign data values to this empty object in the subsequent lines.
+However example=3 will produce an error.
+
+const e=[1,2,3,4];
+e.push(5);------> does not produce an error. There's nothing wrong with this statement.
+Array operations are alllowed in a const array. 

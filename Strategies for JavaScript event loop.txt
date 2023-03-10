@@ -1,0 +1,5 @@
+There are three strategies for javascript event loop.
+
+JavaScript does not have a sleep method.
+
+setTimeout(myfunction, time) works like a delay method. The parameter myfunction is the name of the function that will be executed. The parameter time is the time duration of delay.

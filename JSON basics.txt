@@ -1,0 +1,9 @@
+JSON stands for JavaScript Object Notation.
+It is a lightweight format for storing and transporting data.
+It is used to transfer data from a server to a web page.
+Data is in name:value pairs.
+Curly braces {} hold the objects.
+Square braces [] hold the arrays.
+JSON format is syntactically similar to  jacascript objects. This is why it is easy to convert JSON data into javascript objects.
+We can convert a javascript built-in function JSON.parse() to convert a string into a javascript object.
+The javascript file practice22.js contains a demonstration of JSON.parse() operation. 
